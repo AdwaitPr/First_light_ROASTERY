@@ -1,0 +1,60 @@
+<section id="sequence" aria-labelledby="seq-title" style="translate: none; rotate: none; scale: none; left: 0px; top: 0px; margin: 0px; max-width: 1920px; width: 1920px; max-height: 1080px; height: 1080px; padding: 0px; box-sizing: border-box; position: fixed; transform: translate(0px, 0px);">
+    <canvas id="sequence-canvas" role="img" aria-label="A three-stage pour-over sequence: raw ingredients — whole beans beside an empty ceramic dripper and carafe; mid-brew — water pouring in with rising steam; finished pour — a full carafe as the steam settles." width="1920" height="1080" style="width: 1920px; height: 1080px;"></canvas>
+
+    <div class="stage-scrim" aria-hidden="true"></div>
+
+    <div class="stage-ui">
+      <div>
+        <ol class="stepper" id="stepper">
+          <li data-step="0" class=""><b></b> Raw ingredients</li>
+          <li data-step="1" class="is-on"><b></b> Mid-brew</li>
+          <li data-step="2"><b></b> Finished pour</li>
+        </ol>
+
+        <div class="stage-head">
+          <p class="kicker" data-reveal="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">02 — The pour</p>
+          <h2 id="seq-title" data-split-lines="" aria-label="Three states of one cup." style="opacity: 1;"><span class="line-mask" aria-hidden="true"><span class="line-inner" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0%);"><span>Three</span> <span>states</span> <span>of</span> <em><span>one</span></em> <em><span>cup</span></em><span>.</span></span></span></h2>
+          <p data-reveal="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Scroll to move through the brew. The stage is scrubbed frame by frame, never played — your thumb sets the clock.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="cards" id="cards">
+          <article class="card" data-card="0" style="visibility: hidden; translate: none; rotate: none; scale: none; transform: translate(0px, 14px); opacity: 0;">
+            <span>01 — Raw ingredients</span>
+            <h3>Sourced with <em>intention</em>.</h3>
+            <p>Direct relationships, harvested at peak ripeness, rested after travel before they ever meet the drum.</p>
+          </article>
+          <article class="card" data-card="1" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: visible;">
+            <span>02 — Mid-brew</span>
+            <h3>Roasted to <em>order</em>.</h3>
+            <p>Twelve-kilo batches, profiled by ear and eye. Nothing ships that was roasted more than four days ago.</p>
+          </article>
+          <article class="card" data-card="2" style="translate: none; rotate: none; scale: none; transform: translate(0px, 14px); opacity: 0; visibility: hidden;">
+            <span>03 — Finished pour</span>
+            <h3>Brewed with <em>care</em>.</h3>
+            <p>Ninety-four degrees, four pours, three minutes. Ceramics warmed first, because the cup remembers cold.</p>
+          </article>
+        </div>
+
+        <div class="stage-foot">
+          <span class="mono" id="seq-frame">Stage 02 / 03</span>
+          <span class="bar" aria-hidden="true"><i id="seq-fill" style="transform: scaleX(0.6);"></i><u id="seq-head" style="left: 60%;"></u></span>
+          <span class="mono" id="seq-pct">060%</span>
+        </div>
+      </div>
+    </div>
+
+    <ol class="sr-only">
+      <li>Raw ingredients</li>
+      <li>Mid-brew</li>
+      <li>Finished pour</li>
+    </ol>
+
+    <noscript>
+      <!-- Stage 6 — static final keyframe for the no-JS path.
+           Requires assets/frames/desktop/key-3.webp (see assets/ASSET-SPEC.md). -->
+      <img class="noscript-frame" src="assets/frames/desktop/key-3.webp" width="1280" height="720"
+           alt="Finished pour: a full glass carafe beneath a ceramic dripper as the steam settles.">
+    </noscript>
+  </section>
